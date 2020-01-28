@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native'
 import Input from '../components/Input';
 import MyButton from '../components/MyButton';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 export default class SignUp extends Component {
     render() {
@@ -49,11 +50,12 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         backgroundColor: '#ffcb27',
-        marginVertical: 20,
-        marginHorizontal: 15,
-        height: 350,
-        maxHeight: 350,
-        maxWidth: 280,
+        marginVertical: hp('5%'), // 20,
+        marginHorizontal: wp('15%'), // 15,
+        height: hp('53%'), // 350,
+        width: wp('67%'),
+        // maxHeight: hp('53%'), // 350,
+        // maxWidth: wp('67%'), // 280,
         padding: 10,
         paddingTop: 0,
         borderRadius: 10,
@@ -126,18 +128,18 @@ const styles = StyleSheet.create({
         paddingTop: 8
     },
     title: {
-        fontSize: 15,
+        fontSize: wp('3.77%'), // 15,
         fontWeight: 'bold',
         paddingBottom: 8,
         textAlign: 'justify',
         letterSpacing: 2,
     },
     phone: {
-        fontSize: 10,
+        fontSize: wp('2.4%'), // 10,
         fontWeight: 'bold',
     },
     signIn: {
-        fontSize: 11,
+        fontSize: wp('2.8%'), // 11,
         textDecorationLine: 'underline',
         color: '#333435'
     }

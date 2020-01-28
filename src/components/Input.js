@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, TextInput, StyleSheet } from 'react-native'
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 export default class Input extends Component {
     state = {
@@ -23,14 +24,14 @@ export default class Input extends Component {
 
 const styles = StyleSheet.create({
     input: {
-        height: 35,
-        width: 250,
+        height: hp('5.3%'), // 35,
+        width: wp('60%'), // 250,
         backgroundColor: '#ffffff',
         borderRadius: 5,
         color: '#999',
-        fontSize: 12,
-        fontWeight: '600',
+        fontSize: wp('2.8%'), // 12,
+        fontWeight: 'bold',
         marginTop: 10,
-        elevation: 2
+        elevation: 2,
     }
 });

@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import { TouchableOpacity, Text, View, StyleSheet } from 'react-native'
+import React, { Component } from 'react';
+import { TouchableOpacity, Text, View, StyleSheet } from 'react-native';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 export default class MyButton extends Component {
     render() {
@@ -16,8 +17,8 @@ export default class MyButton extends Component {
 
 const styles = StyleSheet.create({
     button: {
-        height: 40,
-        width: 250,
+        height: hp('6%'), //40,
+        width: wp('60%'), // 250,
         borderRadius: 5,
         borderWidth: 1,
         borderStyle: "dashed",
@@ -36,6 +37,6 @@ const styles = StyleSheet.create({
     text: {
         color: '#60656b',
         fontWeight: 'bold',
-        fontSize: 12
+        fontSize: wp('3.2%'), // 12
     }
 });
