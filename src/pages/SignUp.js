@@ -43,17 +43,16 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
+    marginTop: hp('15%')
   },
   container: {
     flex: 1,
     flexDirection: 'column',
     backgroundColor: '#ffcb27',
-    marginVertical: hp('5%'), // 20,
     marginHorizontal: wp('15%'), // 15,
     height: hp('47%'), // 350,
     width: wp('67%'),
-    // maxHeight: hp('53%'), // 350,
-    // maxWidth: wp('67%'), // 280,
+    maxHeight: 340,
     padding: 10,
     paddingTop: 0,
     borderRadius: 10,
@@ -64,7 +63,7 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
     shadowOffset: {
       width: 0,
-      height: 10,
+      height: 6,
     },
   },
   header: {

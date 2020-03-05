@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     button: {
         height: hp('6%'), //40,
         width: wp('60%'), // 250,
+        maxHeight: 40,
         borderRadius: 5,
         borderWidth: 1,
         borderStyle: "dashed",
